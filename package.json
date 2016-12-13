@@ -7,14 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "link": "bin/link"
+    "links": "bin/link"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/libo8335544/link"
   },
   "keywords": [
-    "scion",
+    "links",
     "cli",
     "es6"
   ],
