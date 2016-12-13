@@ -17,9 +17,9 @@ npm link
 ```
 
 # Usage
-Open your terminal and type `scion` or `scion -h` , you'll see the help infomation below:
+
 ```
-  Usage: scion <command>
+  Usage: link <command>
 
 
   Commands:
@@ -37,54 +37,53 @@ Open your terminal and type `scion` or `scion -h` , you'll see the help infomati
 
 # Commands
 ### add | a
-This command would help you to add a new template to the `templates.json`, which will be used by Scion to generate projects.
+添加一个新的模板 成功后添加到本地的`templates.json`
 ```
-$ scion add
+$ link add 
 ```
 ```
- /*  your template's name */
+ /*  Template name：模板名称 */
 Template name: my-tpl
 
- /* your template's git https link, note that it ends with .git */
-Git https link:  https://gitxxx/somebody/my-tpl.git 
+ /*https link： git https 链接*/
+Git https link:  https://xxx.git 
 
- /* your template's branch */
+ /* Branch:模板的分支 */
 Branch: master 
 ```
-Once confirm you'll see the message like below:
+添加模板成功后，您将看到:
 ```
 The last template list is:
 
 { tpl:
    { 'my-tpl-name':
-      { url: 'https://gitxxx/somebody/my-tpl.git',
+      { url: 'https://xxx.git',
         branch: 'master' } } }
 ```
-Now you've added a new template to Scion successfully.
 
 ### list | l
-It shows you the templates list.
+查看模板列表.
 ```
-$ scion list
+$ link list
 
 { tpl:
    { 'my-tpl-name':
-      { url: 'https://gitxxx/somebody/my-tpl.git',
+      { url: 'https://xxxx.git',
         branch: 'master' } } }
 ```
 
 ### init | i
-After adding new templates, you could use this command to generate your own project by choosing template.
+初始化 link配置 ，可以根据选择项配置出项目模板列表中的项目
 ```
-$ scion init
+$  init
 
-/* enter a template name which was added by yourself */
+/* Template name：输入一个模板名称 */
 Template name: my-tpl-name
 
-/* your project name */
+/* Project name：输入本地的要创建的项目名称 */
 Project name: my-new-project
 ```
-After enter correct template name and confirm, you'll see the message below:
+创建成功后您将看到一下：
 ```
 Start generating...
 
@@ -95,15 +94,15 @@ Start generating...
 It's easy, right?
 
 ### delete | d
-To delete a template, you could use this command:
+删除模板:
 ```
-$ scion delete
+$ link delete
 ```
-and type the template name you want to delete:
+Template name：输入要删除的模板名称
 ```
 Template name: my-tpl-name
 ```
-if the name exist, you will see:
+删除成功后您将看到:
 ```
 Template deleted!
 The last template list is:
@@ -111,16 +110,10 @@ The last template list is:
 { tpl:
    { 'my-tpl-name': undefined } }
 ```
-once a template is `undefined`, it means you've deleted it successfully.
 
-# Template
-The most important part of Scion is `template`. All templates' infomation were list in the `templates.json`.
-A template means a project sample, which has a simple or complex file structure.
 
-You can create your own templates repository, and push your templates in different branches. All you need to do then is to add the templates into Scion's `templates.json`.
 
-# License
-MIT.
+
 
 
 
