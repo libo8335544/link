@@ -16,8 +16,7 @@ cd scion && npm install
 npm link
 ```
 
-# Usage
-
+# 使用
 ```
   Usage: link <command>
 
@@ -35,7 +34,7 @@ npm link
     -V, --version  output the version number
 ```
 
-# Commands
+# 命令大全
 ### add | a
 添加一个新的模板 成功后添加到本地的`templates.json`
 ```
