@@ -1,11 +1,11 @@
 
 
-# link
+# links
 这是一个可以进行模板选择的自动化工具
 
 # 安装依赖
 ```
-npm install link-cli -g
+npm install links -g
 ```
 或者
 ```
@@ -18,7 +18,7 @@ npm link
 
 # 使用
 ```
-  Usage: link <command>
+  Usage: links <command>
 
 
   Commands:
@@ -38,7 +38,7 @@ npm link
 ### add | a
 添加一个新的模板 成功后添加到本地的`templates.json`
 ```
-$ link add 
+$ links add 
 ```
 ```
  /*  Template name：模板名称 */
@@ -74,7 +74,7 @@ $ link list
 ### init | i
 初始化 link配置 ，可以根据选择项配置出项目模板列表中的项目
 ```
-$  init
+$ links init|i
 
 /* Template name：输入一个模板名称 */
 Template name: my-tpl-name
@@ -95,7 +95,7 @@ It's easy, right?
 ### delete | d
 删除模板:
 ```
-$ link delete
+$ links delete
 ```
 Template name：输入要删除的模板名称
 ```
