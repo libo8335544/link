@@ -9,7 +9,7 @@ npm install links -g
 ```
 或者
 ```
-git clone https://github.com/jrainlau/scion.git
+git clone https://github.com/libo8335544/link.git
 
 cd scion && npm install
 
