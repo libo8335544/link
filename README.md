@@ -11,7 +11,7 @@ npm install links -g
 ```
 git clone https://github.com/libo8335544/link.git
 
-cd scion && npm install
+cd link && npm install
 
 npm link
 ```
